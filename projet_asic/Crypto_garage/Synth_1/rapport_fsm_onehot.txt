@@ -1,0 +1,32 @@
+****************************************
+Report : fsm
+Design : Crypto_garage
+Version: V-2004.06-SP1
+Date   : Wed Mar 26 11:33:18 2014
+****************************************
+
+Clock             : clk         Sense: rising_edge 
+Asynchronous Reset: reset       Sense: rising        State: PowerUp
+
+Encoding Bit Length: 11
+Encoding style     : one_hot
+
+State Vector: { PowerUp PowerDown NoKey Deactivated Activated Down Up MovingOnDown MovingOnUp SafetyError SecurityError }
+
+
+State Encodings and Order: 
+
+PowerUp    : 10000000000
+PowerDown  : 01000000000
+NoKey      : 00100000000
+Deactivated : 00010000000
+Activated  : 00001000000
+Down       : 00000100000
+Up         : 00000010000
+MovingOnDown : 00000001000
+MovingOnUp : 00000000100
+SafetyError : 00000000010
+SecurityError : 00000000001
+
+
+1

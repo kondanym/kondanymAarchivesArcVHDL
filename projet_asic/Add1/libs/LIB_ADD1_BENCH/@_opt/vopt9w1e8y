@@ -1,0 +1,62 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/tp/xm1iarc/xm1iarc015/projet_asic/Add1/bench
+T_opt
+VDSYTA:kdJbb0Y1QfXcSz31
+04 7 0 work config1 1
+=1-002564c7968d-5321d0a5-3d680-21c3
+o-quiet -auto_acc_if_foreign -work LIB_ADD1_BENCH
+n@_opt
+OL;O;10.1d;51
+Cconfig1
+atest1
+etestAdd1
+DEx8 lib_add1 10 full_adder 0 22 9:8b1DZanoQ?:ebcUHQin1
+DAx14 lib_add1_bench 8 testadd1 5 test1 22 HA889A^aA<T_OkY:I@1g;2
+DEx14 lib_add1_bench 8 testadd1 0 22 7bbYk0Xh=F]^@boW0m^nz3
+Z1 w1394615280
+Z2 d/tp/xm1iarc/xm1iarc015/projet_asic/Add1/bench
+Z3 8testAdd1.vhd
+Z4 FtestAdd1.vhd
+l0
+L22
+V<:YaT7[gLLkER;JK:zeB72
+Z5 OL;C;10.1d;51
+32
+Z6 !s108 1394724724.573040
+Z7 !s90 -work|LIB_ADD1_BENCH|testAdd1.vhd|
+Z8 !s107 testAdd1.vhd|
+Z9 o-work LIB_ADD1_BENCH
+!s100 z=HIa<K;>E3K@`02RJeb73
+!i10b 1
+Etestadd1
+R1
+R2
+R3
+R4
+l0
+L1
+V7bbYk0Xh=F]^@boW0m^nz3
+R5
+32
+R6
+R7
+R8
+R9
+!s100 m7]^`_I_WP8mb]6Y@>eD30
+!i10b 1
+Atest1
+DEx4 work 8 testadd1 0 22 7bbYk0Xh=F]^@boW0m^nz3
+l9
+L4
+VHA889A^aA<T_OkY:I@1g;2
+R5
+32
+R6
+R7
+R8
+R9
+!s100 [H1^Q[bJDNcBW=i=?kD0M0
+!i10b 1

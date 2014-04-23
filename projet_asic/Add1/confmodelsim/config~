@@ -1,0 +1,3 @@
+#!/bin/bash -f
+
+export MODELSIM=$HOME/TP/Add1/confmodelsim/modelsim.ini

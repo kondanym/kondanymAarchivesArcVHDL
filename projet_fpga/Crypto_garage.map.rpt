@@ -1,0 +1,355 @@
+Analysis & Synthesis report for Crypto_garage
+Tue Apr 22 19:37:51 2014
+Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Crypto_garage|state
+  9. General Register Statistics
+ 10. Source assignments for Top-level Entity: |crypto_garage
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Apr 22 19:37:51 2014          ;
+; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Full Version ;
+; Revision Name                      ; Crypto_garage                                  ;
+; Top-level Entity Name              ; Crypto_garage                                  ;
+; Family                             ; Cyclone II                                     ;
+; Total logic elements               ; 82                                             ;
+;     Total combinational functions  ; 82                                             ;
+;     Dedicated logic registers      ; 37                                             ;
+; Total registers                    ; 37                                             ;
+; Total pins                         ; 55                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C20F484C7       ;                    ;
+; Top-level entity name                                                      ; crypto_garage      ; Crypto_garage      ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2 processors           ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                      ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+
+; pack.vhdl                        ; yes             ; User VHDL File  ; /tp/xm1iarc/xm1iarc015/projet_fpga/pack.vhdl         ;
+; crypto_garage.vhd                ; yes             ; User VHDL File  ; /tp/xm1iarc/xm1iarc015/projet_fpga/crypto_garage.vhd ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 82          ;
+;                                             ;             ;
+; Total combinational functions               ; 82          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 32          ;
+;     -- 3 input functions                    ; 10          ;
+;     -- <=2 input functions                  ; 40          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 57          ;
+;     -- arithmetic mode                      ; 25          ;
+;                                             ;             ;
+; Total registers                             ; 37          ;
+;     -- Dedicated logic registers            ; 37          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 55          ;
+; Maximum fan-out node                        ; process_4~0 ;
+; Maximum fan-out                             ; 26          ;
+; Total fan-out                               ; 374         ;
+; Average fan-out                             ; 2.15        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |Crypto_garage             ; 82 (82)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |Crypto_garage      ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Crypto_garage|state                                                                                                                                                                                ;
++---------------------+---------------------+-------------------+------------------+--------------------+----------+------------+-----------------+-------------------+-------------+-----------------+---------------+
+; Name                ; state.SecurityError ; state.SafetyError ; state.MovingOnUp ; state.MovingOnDown ; state.Up ; state.Down ; state.Activated ; state.Deactivated ; state.NoKey ; state.PowerDown ; state.PowerUp ;
++---------------------+---------------------+-------------------+------------------+--------------------+----------+------------+-----------------+-------------------+-------------+-----------------+---------------+
+; state.PowerUp       ; 0                   ; 0                 ; 0                ; 0                  ; 0        ; 0          ; 0               ; 0                 ; 0           ; 0               ; 0             ;
+; state.PowerDown     ; 0                   ; 0                 ; 0                ; 0                  ; 0        ; 0          ; 0               ; 0                 ; 0           ; 1               ; 1             ;
+; state.NoKey         ; 0                   ; 0                 ; 0                ; 0                  ; 0        ; 0          ; 0               ; 0                 ; 1           ; 0               ; 1             ;
+; state.Deactivated   ; 0                   ; 0                 ; 0                ; 0                  ; 0        ; 0          ; 0               ; 1                 ; 0           ; 0               ; 1             ;
+; state.Activated     ; 0                   ; 0                 ; 0                ; 0                  ; 0        ; 0          ; 1               ; 0                 ; 0           ; 0               ; 1             ;
+; state.Down          ; 0                   ; 0                 ; 0                ; 0                  ; 0        ; 1          ; 0               ; 0                 ; 0           ; 0               ; 1             ;
+; state.Up            ; 0                   ; 0                 ; 0                ; 0                  ; 1        ; 0          ; 0               ; 0                 ; 0           ; 0               ; 1             ;
+; state.MovingOnDown  ; 0                   ; 0                 ; 0                ; 1                  ; 0        ; 0          ; 0               ; 0                 ; 0           ; 0               ; 1             ;
+; state.MovingOnUp    ; 0                   ; 0                 ; 1                ; 0                  ; 0        ; 0          ; 0               ; 0                 ; 0           ; 0               ; 1             ;
+; state.SafetyError   ; 0                   ; 1                 ; 0                ; 0                  ; 0        ; 0          ; 0               ; 0                 ; 0           ; 0               ; 1             ;
+; state.SecurityError ; 1                   ; 0                 ; 0                ; 0                  ; 0        ; 0          ; 0               ; 0                 ; 0           ; 0               ; 1             ;
++---------------------+---------------------+-------------------+------------------+--------------------+----------+------------+-----------------+-------------------+-------------+-----------------+---------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 37    ;
+; Number of registers using Synchronous Clear  ; 26    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 11    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------+
+; Source assignments for Top-level Entity: |crypto_garage ;
++------------+---------+------+---------------------------+
+; Assignment ; Value   ; From ; To                        ;
++------------+---------+------+---------------------------+
+; LOCATION   ; Pin_M1  ; -    ; command[1]                ;
+; LOCATION   ; Pin_L2  ; -    ; command[0]                ;
+; LOCATION   ; Pin_F4  ; -    ; seg_val_hex3[6]           ;
+; LOCATION   ; Pin_D5  ; -    ; seg_val_hex3[5]           ;
+; LOCATION   ; Pin_D6  ; -    ; seg_val_hex3[4]           ;
+; LOCATION   ; Pin_J4  ; -    ; seg_val_hex3[3]           ;
+; LOCATION   ; Pin_L8  ; -    ; seg_val_hex3[2]           ;
+; LOCATION   ; Pin_F3  ; -    ; seg_val_hex3[1]           ;
+; LOCATION   ; Pin_D4  ; -    ; seg_val_hex3[0]           ;
+; LOCATION   ; Pin_Y21 ; -    ; LEDG[7]                   ;
+; LOCATION   ; Pin_Y22 ; -    ; LEDG[6]                   ;
+; LOCATION   ; Pin_W21 ; -    ; LEDG[5]                   ;
+; LOCATION   ; Pin_W22 ; -    ; LEDG[4]                   ;
+; LOCATION   ; Pin_V21 ; -    ; LEDG[3]                   ;
+; LOCATION   ; Pin_V22 ; -    ; LEDG[2]                   ;
+; LOCATION   ; Pin_U21 ; -    ; LEDG[1]                   ;
+; LOCATION   ; Pin_U22 ; -    ; LEDG[0]                   ;
+; LOCATION   ; Pin_J2  ; -    ; seg_val_hex0[6]           ;
+; LOCATION   ; Pin_J1  ; -    ; seg_val_hex0[5]           ;
+; LOCATION   ; Pin_H2  ; -    ; seg_val_hex0[4]           ;
+; LOCATION   ; Pin_H1  ; -    ; seg_val_hex0[3]           ;
+; LOCATION   ; Pin_F2  ; -    ; seg_val_hex0[2]           ;
+; LOCATION   ; Pin_F1  ; -    ; seg_val_hex0[1]           ;
+; LOCATION   ; Pin_E2  ; -    ; seg_val_hex0[0]           ;
+; LOCATION   ; Pin_E1  ; -    ; seg_val_hex1[6]           ;
+; LOCATION   ; Pin_H6  ; -    ; seg_val_hex1[5]           ;
+; LOCATION   ; Pin_H5  ; -    ; seg_val_hex1[4]           ;
+; LOCATION   ; Pin_H4  ; -    ; seg_val_hex1[3]           ;
+; LOCATION   ; Pin_G3  ; -    ; seg_val_hex1[2]           ;
+; LOCATION   ; Pin_D2  ; -    ; seg_val_hex1[1]           ;
+; LOCATION   ; Pin_D1  ; -    ; seg_val_hex1[0]           ;
+; LOCATION   ; Pin_R22 ; -    ; reset                     ;
+; LOCATION   ; Pin_L1  ; -    ; clk                       ;
+; LOCATION   ; Pin_M2  ; -    ; aes_key                   ;
+; LOCATION   ; Pin_U11 ; -    ; authentication            ;
+; LOCATION   ; Pin_U12 ; -    ; reached_bottom            ;
+; LOCATION   ; Pin_W12 ; -    ; reached_top               ;
+; LOCATION   ; Pin_V12 ; -    ; ACSC                      ;
+; LOCATION   ; Pin_M22 ; -    ; bad_encryption            ;
+; LOCATION   ; Pin_L21 ; -    ; timeout                   ;
+; LOCATION   ; Pin_L22 ; -    ; switch                    ;
++------------+---------+------+---------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+    Info: Processing started: Tue Apr 22 19:37:47 2014
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Crypto_garage -c Crypto_garage
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 0 entities, in source file pack.vhdl
+    Info (12022): Found design unit 1: CONV_PACK_Crypto_garage
+    Info (12022): Found design unit 2: CONV_PACK_Crypto_garage-body
+Info (12021): Found 2 design units, including 1 entities, in source file crypto_garage.vhd
+    Info (12022): Found design unit 1: Crypto_garage-Garage
+    Info (12023): Found entity 1: Crypto_garage
+Info (12127): Elaborating entity "crypto_garage" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at crypto_garage.vhd(20): used implicit default value for signal "LEDG" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at crypto_garage.vhd(22): used implicit default value for signal "seg_val_hex1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10037): Verilog HDL or VHDL warning at crypto_garage.vhd(98): conditional expression evaluates to a constant
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at crypto_garage.vhd(18)
+Warning (10021): Ignored chip_pin synthesis attribute for port "LEDR" because the synthesis attribute's pin assignment list contains 9 assignment(s), which does not match port width of 10 bit(s)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[9]" is stuck at GND
+    Warning (13410): Pin "LEDG[0]" is stuck at GND
+    Warning (13410): Pin "LEDG[1]" is stuck at GND
+    Warning (13410): Pin "LEDG[2]" is stuck at GND
+    Warning (13410): Pin "LEDG[3]" is stuck at GND
+    Warning (13410): Pin "LEDG[4]" is stuck at GND
+    Warning (13410): Pin "LEDG[5]" is stuck at GND
+    Warning (13410): Pin "LEDG[6]" is stuck at GND
+    Warning (13410): Pin "LEDG[7]" is stuck at GND
+    Warning (13410): Pin "seg_val_hex1[0]" is stuck at GND
+    Warning (13410): Pin "seg_val_hex1[1]" is stuck at GND
+    Warning (13410): Pin "seg_val_hex1[2]" is stuck at GND
+    Warning (13410): Pin "seg_val_hex1[3]" is stuck at GND
+    Warning (13410): Pin "seg_val_hex1[4]" is stuck at GND
+    Warning (13410): Pin "seg_val_hex1[5]" is stuck at GND
+    Warning (13410): Pin "seg_val_hex1[6]" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+Info (21057): Implemented 137 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 43 output pins
+    Info (21061): Implemented 82 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 341 megabytes
+    Info: Processing ended: Tue Apr 22 19:37:51 2014
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -1,0 +1,212 @@
+# //  ModelSim SE-64 10.1d Nov  1 2012 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim -assertdebug LIB_CGARAGE_BENCH.config1
+# vsim -assertdebug LIB_CGARAGE_BENCH.config1 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading c35_corelib.vcomponents
+# Loading lib_cgarage.conv_pack_crypto_garage(body)
+# Loading work.config1#1
+# Loading work.testgarage(test)#1
+# Loading lib_cgarage.crypto_garage(garage)#1
+# Loading lib_cgarage.crypto_garage(syn_garage)#1
+# ** Warning: (vsim-3473) Component instance "state_reg_0_label : DFC1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "state_reg_1_label : DFC1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "state_reg_2_label : DFC1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "state_reg_3_label : DFC1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U310 : OAI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U311 : AOI220" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U312 : OAI220" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U313 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U314 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U315 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U316 : OAI310" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U317 : OAI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U318 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U319 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U320 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U321 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U322 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U323 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U324 : AOI310" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U325 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U326 : OAI2110" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U327 : AOI220" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U328 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U329 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U330 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U331 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U332 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U333 : NAND40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U334 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U335 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U336 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U337 : NAND40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U338 : OAI310" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U339 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U340 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U341 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U342 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U343 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U344 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U345 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U346 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U347 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U348 : IMUX20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U349 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U350 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U351 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U352 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U353 : AOI220" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U354 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U355 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U356 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U357 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U358 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U359 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U360 : NOR20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U361 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U362 : OAI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U363 : MUX21" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U364 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U365 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U366 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U367 : AOI210" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U368 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U369 : AOI310" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U370 : NAND20" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U371 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U372 : NAND30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U373 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U374 : NOR30" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U375 : NOR40" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-3473) Component instance "U376 : CLKIN0" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /testGarage/G2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+# ** Warning: (vsim-8684) No drivers exist on out port /testgarage/G2/key_led, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /testgarage/key_led_b.
+# ** Warning: (vsim-8684) No drivers exist on out port /testgarage/G2/open_light, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /testgarage/open_light_b.
+# ** Warning: (vsim-8684) No drivers exist on out port /testgarage/G2/close_light, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /testgarage/close_light_b.
+add wave -position insertpoint  \
+sim:/testgarage/ACSC_t \
+sim:/testgarage/aes_key_t \
+sim:/testgarage/authentication_led_b \
+sim:/testgarage/authentication_led_t \
+sim:/testgarage/authentication_t \
+sim:/testgarage/bad_encryption_t \
+sim:/testgarage/clk_t \
+sim:/testgarage/close_light_b \
+sim:/testgarage/close_light_t \
+sim:/testgarage/command_t \
+sim:/testgarage/key_led_b \
+sim:/testgarage/key_led_t \
+sim:/testgarage/open_light_b \
+sim:/testgarage/open_light_t \
+sim:/testgarage/reached_bottom_t \
+sim:/testgarage/reached_top_t \
+sim:/testgarage/reset_t \
+sim:/testgarage/switch_t \
+sim:/testgarage/timeout_t
+run
+run
+run
+# ** Error: Assertion failed
+#    Time: 270 ns Started: 270 ns  Scope: /testgarage/G1/assert__assert2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd Line: 37 Expr: authentication
+# ** Error: Assertion failed
+#    Time: 290 ns Started: 290 ns  Scope: /testgarage/G1/assert__assert2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd Line: 37 Expr: authentication
+run
+# ** Error: Assertion failed
+#    Time: 310 ns Started: 310 ns  Scope: /testgarage/G1/assert__assert2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd Line: 37 Expr: authentication
+# ** Error: Assertion failed
+#    Time: 330 ns Started: 330 ns  Scope: /testgarage/G1/assert__assert2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd Line: 37 Expr: authentication
+# ** Error: Assertion failed
+#    Time: 330 ns Started: 330 ns  Scope: /testgarage/G1/assert__assert3 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd Line: 38 Expr: open_light = '1' and ACSC = '1' and command = d_open
+# ** Error: Assertion failed
+#    Time: 350 ns Started: 350 ns  Scope: /testgarage/G1/assert__assert2 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd Line: 37 Expr: authentication
+run
+# ** Error: Assertion failed
+#    Time: 410 ns Started: 410 ns  Scope: /testgarage/G1/assert__assert3 File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd Line: 38 Expr: open_light = '1' and ACSC = '1' and command = d_open
+run

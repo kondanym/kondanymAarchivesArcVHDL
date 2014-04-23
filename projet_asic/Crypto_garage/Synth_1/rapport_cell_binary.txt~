@@ -1,0 +1,94 @@
+****************************************
+Report : cell
+Design : Crypto_garage
+Version: V-2004.06-SP1
+Date   : Wed Mar 26 11:14:45 2014
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U310                      OAI2110         c35_CORELIB     91.000000 
+U311                      AOI220          c35_CORELIB     91.000000 
+U312                      OAI220          c35_CORELIB     91.000000 
+U313                      AOI210          c35_CORELIB     72.800003 
+U314                      OAI210          c35_CORELIB     72.800003 
+U315                      NOR20           c35_CORELIB     54.599998 
+U316                      OAI310          c35_CORELIB     91.000000 
+U317                      OAI2110         c35_CORELIB     91.000000 
+U318                      OAI210          c35_CORELIB     72.800003 
+U319                      AOI210          c35_CORELIB     72.800003 
+U320                      NAND30          c35_CORELIB     72.800003 
+U321                      NAND20          c35_CORELIB     54.599998 
+U322                      CLKIN0          c35_CORELIB     36.400002 
+U323                      NOR30           c35_CORELIB     72.800003 
+U324                      AOI310          c35_CORELIB     91.000000 
+U325                      OAI210          c35_CORELIB     72.800003 
+U326                      OAI2110         c35_CORELIB     91.000000 
+U327                      AOI220          c35_CORELIB     91.000000 
+U328                      OAI210          c35_CORELIB     72.800003 
+U329                      OAI210          c35_CORELIB     72.800003 
+U330                      AOI210          c35_CORELIB     72.800003 
+U331                      OAI210          c35_CORELIB     72.800003 
+U332                      CLKIN0          c35_CORELIB     36.400002 
+U333                      NAND40          c35_CORELIB     91.000000 
+U334                      CLKIN0          c35_CORELIB     36.400002 
+U335                      AOI210          c35_CORELIB     72.800003 
+U336                      OAI210          c35_CORELIB     72.800003 
+U337                      NAND40          c35_CORELIB     91.000000 
+U338                      OAI310          c35_CORELIB     91.000000 
+U339                      CLKIN0          c35_CORELIB     36.400002 
+U340                      AOI210          c35_CORELIB     72.800003 
+U341                      AOI210          c35_CORELIB     72.800003 
+U342                      CLKIN0          c35_CORELIB     36.400002 
+U343                      NOR20           c35_CORELIB     54.599998 
+U344                      CLKIN0          c35_CORELIB     36.400002 
+U345                      NOR20           c35_CORELIB     54.599998 
+U346                      AOI210          c35_CORELIB     72.800003 
+U347                      NOR30           c35_CORELIB     72.800003 
+U348                      IMUX20          c35_CORELIB     91.000000 
+U349                      AOI210          c35_CORELIB     72.800003 
+U350                      OAI210          c35_CORELIB     72.800003 
+U351                      CLKIN0          c35_CORELIB     36.400002 
+U352                      NAND30          c35_CORELIB     72.800003 
+U353                      AOI220          c35_CORELIB     91.000000 
+U354                      NOR20           c35_CORELIB     54.599998 
+U355                      CLKIN0          c35_CORELIB     36.400002 
+U356                      NOR30           c35_CORELIB     72.800003 
+U357                      CLKIN0          c35_CORELIB     36.400002 
+U358                      NOR20           c35_CORELIB     54.599998 
+U359                      CLKIN0          c35_CORELIB     36.400002 
+U360                      NOR20           c35_CORELIB     54.599998 
+U361                      CLKIN0          c35_CORELIB     36.400002 
+U362                      OAI210          c35_CORELIB     72.800003 
+U363                      MUX21           c35_CORELIB     109.199997
+U364                      NAND30          c35_CORELIB     72.800003 
+U365                      CLKIN0          c35_CORELIB     36.400002 
+U366                      NOR30           c35_CORELIB     72.800003 
+U367                      AOI210          c35_CORELIB     72.800003 
+U368                      CLKIN0          c35_CORELIB     36.400002 
+U369                      AOI310          c35_CORELIB     91.000000 
+U370                      NAND20          c35_CORELIB     54.599998 
+U371                      NAND30          c35_CORELIB     72.800003 
+U372                      NAND30          c35_CORELIB     72.800003 
+U373                      CLKIN0          c35_CORELIB     36.400002 
+U374                      NOR30           c35_CORELIB     72.800003 
+U375                      NOR40           c35_CORELIB     72.800003 
+U376                      CLKIN0          c35_CORELIB     36.400002 
+state_reg[0]              DFC1            c35_CORELIB     309.399994
+                                                                    n
+state_reg[1]              DFC1            c35_CORELIB     309.399994
+                                                                    n
+state_reg[2]              DFC1            c35_CORELIB     309.399994
+                                                                    n
+state_reg[3]              DFC1            c35_CORELIB     309.399994
+                                                                    n
+--------------------------------------------------------------------------------
+Total 71 cells                                            5714.800293
+1

@@ -1,0 +1,23 @@
+****************************************
+Report : area
+Design : Crypto_garage
+Version: V-2004.06-SP1
+Date   : Wed Mar 26 11:24:34 2014
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB (File: /softslin/AMS_3.70_CDS/synopsys/c35_3.3V/c35_CORELIB.db)
+
+Number of ports:               16
+Number of nets:                80
+Number of cells:               64
+Number of references:          15
+
+Combinational area:       4040.400391
+Noncombinational area:    1237.599976
+Net Interconnect area:    1548.000000  
+
+Total cell area:          5278.000000
+Total area:               6826.000488
+1

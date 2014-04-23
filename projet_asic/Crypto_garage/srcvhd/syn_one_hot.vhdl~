@@ -1,0 +1,197 @@
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+library LIB_CGARAGE;
+
+
+use LIB_CGARAGE.CONV_PACK_Crypto_garage.all;
+
+entity Crypto_garage is
+
+   port( reset, clk, aes_key, authentication, reached_bottom, reached_top, ACSC
+         , bad_encryption, timeout : in std_logic;  switch : in Switches;  
+         command : in Commands;  key_led, authentication_led, open_light, 
+         close_light : out std_logic);
+
+end Crypto_garage;
+
+architecture SYN_Garage of Crypto_garage is
+
+   component DFC1
+      port( C, D, RN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component DFP1
+      port( C, D, SN : in std_logic;  Q, QN : out std_logic);
+   end component;
+   
+   component INV3
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component CLKIN0
+      port( A : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI210
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI2110
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI310
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR30
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI220
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI220
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component AOI2110
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR20
+      port( A, B : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NOR40
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND30
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component NAND40
+      port( A, B, C, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   component OAI210
+      port( A, B, C : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal switch_port, command_1_port, command_0_port, Deactivated_q, Down_q, 
+      Up_q, MovingOnDown_q, MovingOnUp_q, SafetyError_q, SecurityError_q, 
+      PowerUp_d, PowerDown_d, NoKey_d, Deactivated_d, Activated_d, Down_d, Up_d
+      , MovingOnDown_d, MovingOnUp_d, SafetyError_d, SecurityError_d, n535, 
+      n536, n537, n538, n539, n540, n541, n542, n543, n544, n545, n546, n547, 
+      n548, n549, n550, n551, n552, n553, n554, n555, n556, n557, n558, n559, 
+      n560, n561, n562, n563, n564, n565, n566, n567, n568, n569, n570, n571, 
+      n572, n573, n574, n575, n576, n577, n578, n579, n580, n581, n582, n583, 
+      n584, n585, n586 : std_logic;
+
+begin
+   switch_port <= Switches_to_std_logic(switch);
+   (command_1_port, command_0_port) <= Commands_to_std_logic_vector(command);
+   
+   SecurityError : DFC1 port map( C => clk, D => SecurityError_d, RN => n535, Q
+                           => SecurityError_q, QN => n542);
+   SafetyError : DFC1 port map( C => clk, D => SafetyError_d, RN => n535, Q => 
+                           SafetyError_q, QN => n544);
+   MovingOnUp : DFC1 port map( C => clk, D => MovingOnUp_d, RN => n535, Q => 
+                           MovingOnUp_q, QN => n540);
+   MovingOnDown : DFC1 port map( C => clk, D => MovingOnDown_d, RN => n535, Q 
+                           => MovingOnDown_q, QN => n541);
+   Up : DFC1 port map( C => clk, D => Up_d, RN => n535, Q => Up_q, QN => n543);
+   Down : DFC1 port map( C => clk, D => Down_d, RN => n535, Q => Down_q, QN => 
+                           n545);
+   Activated : DFC1 port map( C => clk, D => Activated_d, RN => n535, Q => n582
+                           , QN => n539);
+   Deactivated : DFC1 port map( C => clk, D => Deactivated_d, RN => n535, Q => 
+                           Deactivated_q, QN => n583);
+   NoKey : DFC1 port map( C => clk, D => NoKey_d, RN => n535, Q => n584, QN => 
+                           n537);
+   PowerDown : DFC1 port map( C => clk, D => PowerDown_d, RN => n535, Q => n585
+                           , QN => n536);
+   PowerUp : DFP1 port map( C => clk, D => PowerUp_d, SN => n535, Q => n586, QN
+                           => n538);
+   U594 : INV3 port map( A => reset, Q => n535);
+   U595 : CLKIN0 port map( A => n546, Q => open_light);
+   U596 : AOI210 port map( A => n547, B => n548, C => MovingOnUp_q, Q => n546);
+   U597 : OAI2110 port map( A => n541, B => reached_bottom, C => n545, D => 
+                           n549, Q => n547);
+   U598 : OAI2110 port map( A => n550, B => n539, C => n542, D => n551, Q => 
+                           key_led);
+   U599 : NAND20 port map( A => aes_key, B => n552, Q => n551);
+   U600 : AOI210 port map( A => command_0_port, B => n553, C => timeout, Q => 
+                           n550);
+   U601 : AOI310 port map( A => n540, B => n543, C => n549, D => n554, Q => 
+                           close_light);
+   U602 : CLKIN0 port map( A => n555, Q => authentication_led);
+   U603 : NOR30 port map( A => n556, B => bad_encryption, C => n557, Q => Up_d)
+                           ;
+   U604 : CLKIN0 port map( A => n554, Q => n557);
+   U605 : AOI220 port map( A => reached_top, B => n558, C => switch_port, D => 
+                           Up_q, Q => n556);
+   U606 : AOI310 port map( A => n559, B => n541, C => n560, D => n561, Q => 
+                           SecurityError_d);
+   U607 : NAND20 port map( A => Down_q, B => switch_port, Q => n559);
+   U608 : OAI220 port map( A => command_1_port, B => n544, C => n562, D => n563
+                           , Q => SafetyError_d);
+   U609 : AOI2110 port map( A => MovingOnDown_q, B => n561, C => SafetyError_q,
+                           D => MovingOnUp_q, Q => n562);
+   U610 : NOR20 port map( A => n564, B => n536, Q => PowerUp_d);
+   U611 : NOR40 port map( A => n565, B => SafetyError_q, C => switch_port, D =>
+                           SecurityError_q, Q => PowerDown_d);
+   U612 : NAND30 port map( A => n541, B => n540, C => n539, Q => n565);
+   U613 : NOR30 port map( A => n564, B => aes_key, C => n566, Q => NoKey_d);
+   U614 : CLKIN0 port map( A => n552, Q => n566);
+   U615 : NAND20 port map( A => n567, B => n568, Q => MovingOnUp_d);
+   U616 : NAND40 port map( A => n558, B => n554, C => n561, D => n569, Q => 
+                           n568);
+   U617 : CLKIN0 port map( A => reached_top, Q => n569);
+   U618 : OAI210 port map( A => n570, B => n571, C => n548, Q => n567);
+   U619 : CLKIN0 port map( A => n572, Q => n570);
+   U620 : OAI220 port map( A => n573, B => n554, C => n574, D => n575, Q => 
+                           MovingOnDown_d);
+   U621 : NAND20 port map( A => n553, B => n576, Q => n575);
+   U622 : CLKIN0 port map( A => reached_bottom, Q => n576);
+   U623 : NAND20 port map( A => command_0_port, B => command_1_port, Q => n554)
+                           ;
+   U624 : AOI210 port map( A => n577, B => n561, C => n571, Q => n573);
+   U625 : OAI210 port map( A => reached_bottom, B => n574, C => n549, Q => n571
+                           );
+   U626 : NAND20 port map( A => SafetyError_q, B => n563, Q => n549);
+   U627 : CLKIN0 port map( A => n560, Q => n577);
+   U628 : AOI210 port map( A => Up_q, B => switch_port, C => n558, Q => n560);
+   U629 : NOR20 port map( A => n540, B => ACSC, Q => n558);
+   U630 : OAI2110 port map( A => n548, B => n572, C => n539, D => n578, Q => 
+                           Down_d);
+   U631 : NAND20 port map( A => reached_bottom, B => n579, Q => n578);
+   U632 : CLKIN0 port map( A => n574, Q => n579);
+   U633 : NAND30 port map( A => n563, B => n561, C => MovingOnDown_q, Q => n574
+                           );
+   U634 : CLKIN0 port map( A => ACSC, Q => n563);
+   U635 : NAND30 port map( A => switch_port, B => n561, C => Down_q, Q => n572)
+                           ;
+   U636 : CLKIN0 port map( A => bad_encryption, Q => n561);
+   U637 : NOR20 port map( A => n553, B => command_0_port, Q => n548);
+   U638 : CLKIN0 port map( A => command_1_port, Q => n553);
+   U639 : OAI210 port map( A => n580, B => n564, C => n542, Q => Deactivated_d)
+                           ;
+   U640 : AOI220 port map( A => aes_key, B => n552, C => Deactivated_q, D => 
+                           n581, Q => n580);
+   U641 : CLKIN0 port map( A => authentication, Q => n581);
+   U642 : NAND20 port map( A => n538, B => n537, Q => n552);
+   U643 : NOR20 port map( A => n564, B => n555, Q => Activated_d);
+   U644 : NAND20 port map( A => authentication, B => Deactivated_q, Q => n555);
+   U645 : CLKIN0 port map( A => switch_port, Q => n564);
+
+end SYN_Garage;

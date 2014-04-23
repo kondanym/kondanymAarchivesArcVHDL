@@ -1,0 +1,28 @@
+Coverage Report Summary Data by file
+
+Total Coverage By File (code coverage only, filtered view): 54.3%
+
+File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd
+    Enabled Coverage        Active      Hits    Misses % Covered
+    ----------------        ------      ----    ------ ---------
+    Stmts                       54        26        28      48.1
+    Branches                    62        32        30      51.6
+    States                      11         9         2      81.8
+    Transitions                 46        13        33      28.2
+
+File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/pack.vhdl
+    Enabled Coverage        Active      Hits    Misses % Covered
+    ----------------        ------      ----    ------ ---------
+    Stmts                        8         6         2      75.0
+    Branches                     8         6         2      75.0
+    States                       0         0         0     100.0
+    Transitions                  0         0         0     100.0
+
+File: /tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/syn_binary.vhdl
+    Enabled Coverage        Active      Hits    Misses % Covered
+    ----------------        ------      ----    ------ ---------
+    Stmts                        3         3         0     100.0
+    Branches                     0         0         0     100.0
+    States                       0         0         0     100.0
+    Transitions                  0         0         0     100.0
+

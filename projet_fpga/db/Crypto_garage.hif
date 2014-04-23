@@ -1,0 +1,59 @@
+Quartus II 32-bit
+Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+14
+1323
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+crypto_garage
+# storage
+db|Crypto_garage.(0).cnf
+db|Crypto_garage.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+crypto_garage.vhd
+848f878db71e826234229fac9e2d4e3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+pack.vhdl
+20adea31292411bfb52d281685c6df
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

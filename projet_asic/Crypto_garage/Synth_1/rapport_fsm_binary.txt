@@ -1,0 +1,94 @@
+****************************************
+Report : fsm
+Design : Crypto_garage
+Version: V-2004.06-SP1
+Date   : Wed Mar 26 11:12:50 2014
+****************************************
+
+Clock             : clk         Sense: rising_edge 
+Asynchronous Reset: reset       Sense: rising        State: PowerUp
+
+Encoding Bit Length: 4
+Encoding style     : binary
+
+State Vector: { state_reg[3] state_reg[2] state_reg[1] state_reg[0] }
+
+
+State Encodings and Order: 
+
+PowerUp    : 0000
+PowerDown  : 0001
+NoKey      : 0010
+Deactivated : 0011
+Activated  : 0100
+Down       : 0101
+Up         : 0110
+MovingOnDown : 0111
+MovingOnUp : 1000
+SafetyError : 1001
+SecurityError : 1010
+*************************************************************************
+****************************************
+Report : fsm
+Design : Crypto_garage
+Version: V-2004.06-SP1
+Date   : Wed Mar 26 11:22:31 2014
+****************************************
+
+Clock             : clk         Sense: rising_edge 
+Asynchronous Reset: reset       Sense: rising        State: PowerUp
+
+Encoding Bit Length: 4
+Encoding style     : gray
+
+State Vector: { state_reg[3] state_reg[2] state_reg[1] state_reg[0] }
+
+
+State Encodings and Order: 
+
+PowerUp    : 0000
+PowerDown  : 0001
+NoKey      : 0011
+Deactivated : 0010
+Activated  : 0110
+Down       : 0111
+Up         : 0101
+MovingOnDown : 0100
+MovingOnUp : 1100
+SafetyError : 1101
+SecurityError : 1111
+************************************************************************
+****************************************
+Report : fsm
+Design : Crypto_garage
+Version: V-2004.06-SP1
+Date   : Wed Mar 26 11:33:18 2014
+****************************************
+
+Clock             : clk         Sense: rising_edge 
+Asynchronous Reset: reset       Sense: rising        State: PowerUp
+
+Encoding Bit Length: 11
+Encoding style     : one_hot
+
+State Vector: { PowerUp PowerDown NoKey Deactivated Activated Down Up MovingOnDown MovingOnUp SafetyError SecurityError }
+
+
+State Encodings and Order: 
+
+PowerUp    : 10000000000
+PowerDown  : 01000000000
+NoKey      : 00100000000
+Deactivated : 00010000000
+Activated  : 00001000000
+Down       : 00000100000
+Up         : 00000010000
+MovingOnDown : 00000001000
+MovingOnUp : 00000000100
+SafetyError : 00000000010
+SecurityError : 00000000001
+
+
+
+
+1

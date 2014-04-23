@@ -1,0 +1,14 @@
+
+State Machine - |Crypto_garage|state
+Name state.SecurityError state.SafetyError state.MovingOnUp state.MovingOnDown state.Up state.Down state.Activated state.Deactivated state.NoKey state.PowerDown state.PowerUp 
+state.PowerUp 0 0 0 0 0 0 0 0 0 0 0 
+state.PowerDown 0 0 0 0 0 0 0 0 0 1 1 
+state.NoKey 0 0 0 0 0 0 0 0 1 0 1 
+state.Deactivated 0 0 0 0 0 0 0 1 0 0 1 
+state.Activated 0 0 0 0 0 0 1 0 0 0 1 
+state.Down 0 0 0 0 0 1 0 0 0 0 1 
+state.Up 0 0 0 0 1 0 0 0 0 0 1 
+state.MovingOnDown 0 0 0 1 0 0 0 0 0 0 1 
+state.MovingOnUp 0 0 1 0 0 0 0 0 0 0 1 
+state.SafetyError 0 1 0 0 0 0 0 0 0 0 1 
+state.SecurityError 1 0 0 0 0 0 0 0 0 0 1 

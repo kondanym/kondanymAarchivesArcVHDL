@@ -1,0 +1,1 @@
+../synth/binary.vhdl

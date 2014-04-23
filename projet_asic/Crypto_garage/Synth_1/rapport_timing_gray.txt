@@ -1,0 +1,39 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Crypto_garage
+Version: V-2004.06-SP1
+Date   : Wed Mar 26 11:28:00 2014
+****************************************
+
+Operating Conditions: nom_pvt   Library: c35_CORELIB
+Wire Load Model Mode: enclosed
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: close_light
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Crypto_garage      10k                   c35_CORELIB
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[3]/C (DFC1)                    0.00       0.00 r
+  state_reg[3]/Q (DFC1)                    1.03       1.03 r
+  U514/Q (NOR20)                           0.51       1.54 f
+  U513/Q (CLKIN0)                          0.99       2.54 r
+  U512/Q (NOR20)                           0.57       3.11 f
+  U510/Q (AOI220)                          0.39       3.50 r
+  U508/Q (NOR20)                           0.20       3.70 f
+  close_light (out)                        0.00       3.70 f
+  data arrival time                                   3.70
+  -----------------------------------------------------------
+  (Path is unconstrained)
+ 
+1

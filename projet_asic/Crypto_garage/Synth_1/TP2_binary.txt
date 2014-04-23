@@ -1,0 +1,48 @@
+Current design is 'Crypto_garage'.
+design_vision-t> extract
+1
+design_vision-t> set_fsm_encoding_style binary
+1
+design_vision-t> compile -map_effort medium -area_effort medium
+
+  Loading target library 'c35_CORELIB'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Crypto_garage' (FSM)
+Warning: All existing encodings are ignored for the binary encoding style. (FSM_COMP-36)
+
+  Updating timing information
+Information: Design 'Crypto_garage' has no optimization constraints set. (OPT-108)
+ 
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'Crypto_garage'
+  Mapping 'Crypto_garage'
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7633.4      0.00       0.0       0.0                          
+ 
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7633.4      0.00       0.0       0.0                          
+ 
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7633.4      0.00       0.0       0.0                          
+    0:00:01    7633.4      0.00       0.0       0.0                          
+    0:00:01    7451.8      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'Crypto_garage' to database 'Crypto_garage.db'

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# source ../confmodelsim/config 
+
+## nettoyage
+if [ -d ../libs/LIB_CGARAGE ] 
+then /bin/rm -rf ../libs/LIB_CGARAGE 
+fi
+
+## creation de la librairie de travail
+vlib ../libs/LIB_CGARAGE
+
+## compilation
+# vcom -work LIB_CGARAGE crypto_garage.vhd syn_binary.vhdl syn_gray.vhdl syn_one_hot.vhdl
+
+
+vcom -cover fbs -work LIB_CGARAGE pack.vhdl
+vcom -cover fbs -work LIB_CGARAGE syn_binary.vhdl
+vcom -cover fbs -work LIB_CGARAGE crypto_garage.vhd

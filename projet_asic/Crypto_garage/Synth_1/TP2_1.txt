@@ -1,0 +1,10 @@
+Inferred memory devices in process 
+	in routine Crypto_garage line 116 in file
+         '/tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/crypto_garage.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Current design is now '/tp/xm1iarc/xm1iarc015/projet_asic/Crypto_garage/srcvhd/Crypto_garage.db:Crypto_garage'

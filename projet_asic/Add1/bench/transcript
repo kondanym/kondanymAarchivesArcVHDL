@@ -1,0 +1,38 @@
+# //  ModelSim SE-64 10.1d Nov  1 2012 Linux 3.2.0-4-amd64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim LIB_ADD1_BENCH.config1
+# vsim LIB_ADD1_BENCH.config1 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading work.config1#1
+# Loading work.testadd1(test1)#1
+# Loading lib_add1.full_adder(dataflow_view)#1
+add wave -r /*
+add wave -position insertpoint  \
+sim:/testadd1/y
+add wave -position insertpoint  \
+sim:/testadd1/c2
+run
+run
+run
+run
+# Load canceled
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

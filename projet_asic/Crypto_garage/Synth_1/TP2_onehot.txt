@@ -1,0 +1,34 @@
+  -------------------------------
+  Structuring 'Crypto_garage'
+  Mapping 'Crypto_garage'
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    8382.4      0.00       0.0       2.7                          
+    0:00:01    8382.4      0.00       0.0       0.0                          
+ 
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    8382.4      0.00       0.0       0.0                          
+ 
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    8382.4      0.00       0.0       0.0                          
+    0:00:01    8382.4      0.00       0.0       0.0                          
+    0:00:01    8064.6      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'Crypto_garage' to database 'Crypto_garage.db'
+
+Current design is 'Crypto_garage'.
+1
